@@ -1,0 +1,37 @@
+
+
+@mixin HeadingL {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 4.3rem;
+}
+@mixin HeadingM {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.1rem;
+}
+
+@mixin Body{
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.3rem;
+}
+
+@mixin containerMobile {
+  width: 100%;
+  max-width: 91.88888%;
+  margin: 0 auto;
+}
+
+
+@mixin QueryTablet {
+  @media screen and (min-width: 768px) {
+    @content;    
+  }
+}
+
+@mixin QueryDesktop {
+  @media screen and (min-width: 1440px) {
+    @content;    
+  }
+}
