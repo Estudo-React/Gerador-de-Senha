@@ -1,0 +1,62 @@
+@use "../../sass/var.scss" as *;
+@use "../../sass/mixin" as mix;
+
+.strength-wrap {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $cinza-escuro;
+  gap: 116px;
+
+  max-width: 476px;
+}
+.strengh-label {
+  color: $cinza;
+  @include mix.Body;
+  text-transform: uppercase;
+}
+.state-wrap {
+  display: flex;
+  gap: 15px;
+  h4 {
+    color: $cinza-claro;
+    @include mix.HeadingM;
+    text-transform: uppercase;
+  }
+}
+.wrap {
+  display: flex;
+  align-items: center;
+  gap: 7.5px;
+}
+.bar {
+  width: 10px;
+  height: 28px;
+  border: 2px solid $cinza-claro;
+}
+.wrap.tooweak {
+  .tint {
+    border-color: $vermelho;
+    background-color: $vermelho;
+  }
+}
+.wrap.weak {
+  .tint {
+    border-color: $laranja;
+    background-color: $laranja;
+  }
+}
+.wrap.medium {
+  .tint {
+    border-color: $amarelo;
+    background-color: $amarelo;
+  }
+}
+.wrap.strong {
+  .tint {
+    border-color: $verde;
+    background-color: $verde;
+  }
+}
+
