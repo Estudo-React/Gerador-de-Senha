@@ -1,0 +1,25 @@
+@use "../../sass/var.scss" as *;
+
+.Slider-div {
+    background-color: $cinza;
+}
+
+.MuiSlider-track{
+    color: $verde;
+}
+
+.MuiSlider-thumb{
+color:$cinza-claro;
+}
+.css-188mx6n-MuiSlider-root{
+    color: $verde;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.MuiSlider-rail css-7o8aqz-MuiSlider-rail {
+    color: $verde;
+
+}
+.css-7o8aqz-MuiSlider-rail {
+    color: $preto;
+}
