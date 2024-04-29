@@ -1,0 +1,34 @@
+@use "../../sass/var.scss" as *;
+@use "../../sass/mixin.scss" as mix;
+
+.button-idle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  width: 100%;
+  min-width: 311px;
+  max-width: 476px;
+  height: 56px;
+
+  border: none;
+  padding: 21px 0;
+
+  background-color: $verde;
+  color: $preto;
+
+  @include mix.Body;
+  text-transform: uppercase;
+
+  transition: ease-in 0.3s;
+
+  &:hover {
+    color: $verde;
+    background-color: $preto;
+    border: 2px solid $verde;
+    path {
+      fill: $verde;
+    }
+  }
+}

@@ -1,4 +1,5 @@
-
+@use 'mixin.scss' as mix;
+@use 'var.scss' as *;
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 *, *::after, *::before{
@@ -6,6 +7,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "JetBrains Mono", monospace;
+}
+
+html{
+  font-size: 62.5%;
+  background-color: $preto
 }
 
 body{
@@ -20,3 +26,4 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
